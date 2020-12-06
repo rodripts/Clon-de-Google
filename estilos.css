@@ -51,6 +51,7 @@ a {
 .buscador-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 530px;
     border: 1px solid #dfe1e5;
     border-radius: 100px;
@@ -66,6 +67,7 @@ a {
     display: flex;
     align-items: center;
     cursor: pointer;
+    margin-left: 10px;
 }
 .micro {
     background-image: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png);
@@ -76,7 +78,6 @@ a {
     height: 25px;
     display: flex;
     align-items: center;
-    margin-top: 7px;
 }
 .botones {
     display: flex;
@@ -111,4 +112,9 @@ a {
 }
 .buscador-container:hover {
     box-shadow: 0 1px 6px 0 gray;
+}
+@media screen and (max-width: 425px) {
+    .buscador-container {
+        width: 90%;
+    }
 }
